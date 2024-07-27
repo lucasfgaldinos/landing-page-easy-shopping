@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+}
+
+.section-content {
+    min-height: 100vh;
+    width: 70%;
+    padding: 200px 0 0 150px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #5D5D7D;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(93, 93, 125, 60%);
+    width: 550px;
+    margin: 18px 0;
+    text-align: justify;
+}
+
+button {
+    background: linear-gradient(#9499EA, #5D5D7D);
+    color: #FFFFFF;
+    padding: 8px 70px;
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background: linear-gradient(#878dff, #44446b);
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.section-menu {
+    min-height: 100vh;
+    width: 30%;
+    background-color: rgba(93, 93, 125, 16%);
+
+}
+
+header {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.link-header {
+    font-size: 28px;
+    font-weight: 400;
+    color: #5D5D7D;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+.link-header:nth-child(2) {
+    color: rgba(93, 93, 125, 40%);
+}
+
+.link-header:hover {
+    opacity: 0.7;
+}
+
+.link-header:active {
+    opacity: 0.4;
+}
+
+.logo {
+    width: 350px;
+    position: relative;
+    top: 110px;
+    right: 105px;
+}
+
+@media screen and (max-width: 1270px) {
+    .section-content {
+        padding: 20px 0 0 70px;
+    }
+
+    .link-header {
+        font-size: 22px;
+    }
+
+    header {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .logo {
+        width: 250px;
+        right: -10px;
+    }
+
+    p {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    header {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    main {
+        flex-direction: column;
+    }
+
+    .section-content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 50vh;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .section-menu {
+        min-height: 50vh;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .logo {
+        position: static;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 36px;
+        line-height: 55px;
+        margin-top: 20px;
+    }
+
+    p {
+        width: 206px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    button {
+        font-size: 19px;
+    }
+}
